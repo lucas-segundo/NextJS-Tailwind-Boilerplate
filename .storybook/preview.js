@@ -7,6 +7,7 @@ import * as nextImage from 'next/image'
 
 // or global addParameters
 export const parameters = {
+  layout: 'fullscreen',
   docs: {
     theme: themes.normal
   },
