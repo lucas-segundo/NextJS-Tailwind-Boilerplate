@@ -169,45 +169,9 @@ export const parameters = {
   }
 }
 
-// Replace next/image for Storybook
+// eslint-disable-next-line no-import-assign
 Object.defineProperty(nextImage, 'default', {
   configurable: true,
-  value: (props) => {
-    const { width, height, layout } = props
-
-    if (layout === 'fill') {
-      return (
-        <img
-          style={{
-            objectFit: 'cover',
-            position: 'absolute',
-            width: '100%',
-            height: '100%'
-          }}
-          {...props}
-        />
-      )
-    }
-
-    const ratio = (height / width) * 100
-
-    return (
-      <div
-        style={{
-          paddingBottom: `${ratio}%`,
-          position: 'relative'
-        }}
-      >
-        <img
-          style={{
-            objectFit: 'cover',
-            position: 'absolute',
-            width: '100%',
-            height: '100%'
-          }}
-          {...props}
-        />
-      </div>
-    )
-  }
+  // eslint-disable-next-line react/display-name
+  value: (props) => <img {...props} />
 })
