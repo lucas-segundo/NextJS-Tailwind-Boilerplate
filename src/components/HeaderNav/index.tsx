@@ -1,6 +1,10 @@
 import Image from 'next/image'
 
-const HeaderNav = () => (
+export type HeaderNavProps = {
+  text: string
+}
+
+const HeaderNav = ({ text = 'Hi' }: HeaderNavProps) => (
   <header>
     <Image
       src="/images/nextjs-starter-banner.png"
@@ -8,6 +12,7 @@ const HeaderNav = () => (
       height={50}
       alt="Image"
     />
+    {text}
   </header>
 )
 

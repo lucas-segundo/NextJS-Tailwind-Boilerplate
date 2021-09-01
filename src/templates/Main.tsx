@@ -9,7 +9,7 @@ type IMainProps = {
 const Main = ({ children, meta }: IMainProps) => (
   <>
     {meta}
-    <HeaderNav />
+    <HeaderNav text="Hi there!" />
     {children}
   </>
 )
