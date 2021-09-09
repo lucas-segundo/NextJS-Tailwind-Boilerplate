@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Box /> should render the heading 1`] = `
+<section>
+  <h1>
+    Box
+  </h1>
+</section>
+`;

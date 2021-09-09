@@ -1,19 +1,7 @@
-import { Meta } from '../layout/Meta'
-import { Main } from '../templates/Main'
+import Main from 'components/templates/Main'
 
 const Index = () => {
-  return (
-    <Main
-      meta={
-        <Meta
-          title="Next.js Boilerplate Presentation"
-          description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
-        />
-      }
-    >
-      Main Page
-    </Main>
-  )
+  return <Main />
 }
 
 export default Index

@@ -4,6 +4,11 @@ module.exports = (plop) => {
     prompts: [
       {
         type: 'input',
+        name: 'type',
+        message: 'What is the type?'
+      },
+      {
+        type: 'input',
         name: 'name',
         message: 'What is your component name?'
       }
@@ -11,17 +16,17 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/index.tsx',
+        path: '../src/components/{{type}}s/{{pascalCase name}}/index.tsx',
         templateFile: 'templates/Component.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/stories.tsx',
+        path: '../src/components/{{type}}s/{{pascalCase name}}/stories.tsx',
         templateFile: 'templates/stories.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/test.tsx',
+        path: '../src/components/{{type}}s/{{pascalCase name}}/test.tsx',
         templateFile: 'templates/test.tsx.hbs'
       }
     ]
