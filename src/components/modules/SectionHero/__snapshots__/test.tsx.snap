@@ -5,10 +5,10 @@ exports[`<SectionHero /> should render the heading 1`] = `
   <h1>
     SectionHero
   </h1>
-  <section>
-    <h1>
-      Box
-    </h1>
-  </section>
+  <div
+    class="rounded-lg shadow-lg undefined"
+  >
+    Box
+  </div>
 </section>
 `;
