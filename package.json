@@ -9,7 +9,7 @@
     "export": "next export",
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
-    "lint": "next lint --fix",
+    "lint": "eslint src --max-warnings=0 --fix",
     "build-types": "tsc --noEmit --pretty",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook",
@@ -20,7 +20,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.": [
+    "src/**/*": [
       "yarn lint",
       "yarn test --findRelatedTests --bail"
     ]

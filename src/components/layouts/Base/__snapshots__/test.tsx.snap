@@ -5,10 +5,10 @@ exports[`<Base /> should render the heading 1`] = `
   <h1>
     Header
   </h1>
-  <section>
-    <h1>
-      Anchor
-    </h1>
-  </section>
+  <a
+    href="/#"
+  >
+    Header Link
+  </a>
 </section>
-`;
+`

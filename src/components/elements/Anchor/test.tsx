@@ -4,9 +4,9 @@ import Anchor from '.'
 
 describe('<Anchor />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Anchor />)
+    const { container } = render(<Anchor>Test</Anchor>)
 
-    expect(screen.getByRole('heading', { name: /Anchor/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Test/i })).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()
   })
