@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react'
 import Base, { BaseProps } from '.'
 
 export default {
-  title: 'Base',
+  title: 'Layouts/Base',
   component: Base
 } as Meta
 

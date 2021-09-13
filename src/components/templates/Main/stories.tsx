@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react'
 import Main from '.'
 
 export default {
-  title: 'Main',
+  title: 'Templates/Main',
   component: Main
 } as Meta
 

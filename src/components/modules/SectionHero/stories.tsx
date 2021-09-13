@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react'
 import SectionHero from '.'
 
 export default {
-  title: 'SectionHero',
+  title: 'Modules/SectionHero',
   component: SectionHero
 } as Meta
 
