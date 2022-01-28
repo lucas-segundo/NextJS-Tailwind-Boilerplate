@@ -19,69 +19,22 @@ const Meta = ({ title, description, canonical }: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" key="apple" />
         <link
-          rel="apple-touch-icon"
-          sizes="57x57"
-          href="/apple-icon-57x57.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="60x60"
-          href="/apple-icon-60x60.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="72x72"
-          href="/apple-icon-72x72.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="76x76"
-          href="/apple-icon-76x76.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="114x114"
-          href="/apple-icon-114x114.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="120x120"
-          href="/apple-icon-120x120.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="144x144"
-          href="/apple-icon-144x144.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/apple-icon-152x152.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-icon-180x180.png"
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+          key="icon16"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="/favicon-32x32.png"
+          key="icon32"
         />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/favicon-96x96.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
+        <link rel="icon" href="/favicon.ico" key="favicon" />
       </Head>
       <NextSeo
         title={title}
@@ -91,8 +44,8 @@ const Meta = ({ title, description, canonical }: IMetaProps) => {
           title,
           description,
           url: canonical,
-          locale: 'pt-BR',
-          site_name: 'Fortel Mais Internet - Provedor de Internet'
+          locale: 'pt-BR', //TODO: change to your locale
+          site_name: 'Your Site Name' //TODO: change to your site name
         }}
       />
       {/* Global Site Tag (gtag.js) - Google Analytics */}

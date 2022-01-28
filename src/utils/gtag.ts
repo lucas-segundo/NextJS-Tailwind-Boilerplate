@@ -1,4 +1,4 @@
-export const GA_TRACKING_ID = String(process.env.NEXT_PUBLIC_GA_ID)
+export const GA_TRACKING_ID = String(process.env.NEXT_PUBLIC_GA_ID) //TODO:set this to your GA tracking ID env var
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: URL) => {

@@ -4,12 +4,10 @@ import SectionHero from '.'
 
 describe('<SectionHero />', () => {
   it('should render the heading', () => {
-    const { container } = render(<SectionHero />)
+    render(<SectionHero />)
 
     expect(
       screen.getByRole('heading', { name: /SectionHero/i })
     ).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
   })
 })

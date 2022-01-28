@@ -1,6 +1,6 @@
 import Base from 'components/layouts/Base'
 import SectionHero from 'components/modules/SectionHero'
-import { Meta } from 'layout/Meta'
+import { Meta } from 'components/elements/Meta'
 
 const Main = () => (
   <>

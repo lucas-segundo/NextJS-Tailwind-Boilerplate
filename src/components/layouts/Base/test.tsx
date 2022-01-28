@@ -4,10 +4,8 @@ import Base from '.'
 
 describe('<Base />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Base>children</Base>)
+    render(<Base>children</Base>)
 
     expect(screen.getByText(/children/i)).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
   })
 })

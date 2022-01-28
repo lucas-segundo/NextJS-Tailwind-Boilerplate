@@ -4,10 +4,8 @@ import Main from '.'
 
 describe('<Main />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Main />)
+    render(<Main />)
 
     expect(screen.getByText(/SectionHero/i)).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
   })
 })
